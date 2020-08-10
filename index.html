@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aff9772b1b.js" crossorigin="anonymous"></script>
+    <title>ToDo App</title>
+</head>
+<body>
+    <header id="page-header">
+        <div class="header-user-details">
+            <img src="./images/user-circle-solid.svg" alt="" class="header-user-details-img">
+            <h2 class="header-user-details-text">John Doe</h2>
+        </div>
+
+        <div class="header-task-action">
+            <input type="text" name="add-task" id="add-task" class="header-task-action-input">
+            <button class="header-task-action-btn" id="submitBtn">
+                <img src="./images/plus-solid.svg" alt="" class="header-task-action-btn-img">
+                <span class="header-task-action-btn-text">Create task</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="page-main">
+        <div class="main-date">
+            <h2 class="main-date-number" id="date"></h2>
+            <p class="main-date-text">
+                <span class="main-date-text-day" id="day"></span>
+                <span class="main-date-text-month" id="month-year"></span>
+            </p>
+        </div>
+
+        <div class="main-tasks-div undone-tasks" id="undone">
+            <h3 class="main-tasks-head">TODO TASKS</h3>
+
+            <div class="main-tasks-body" id="undone-tasks-div">
+                <!-- <div class="task-div">
+                    <p class="task-text">Do the dishes</p>
+                    <button class="task-done-btn mark-task">Done</button>
+                    <button class="task-del-btn">Delete</button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="main-tasks-div done-tasks" id="done">
+            <h3 class="main-tasks-head">DONE TASKS</h3>
+
+            <div class="main-tasks-body" id="done-tasks-div">
+                <!-- <div class="task-div">
+                    <p class="task-text">Do the dishes</p>
+                    <button class="task-done-btn undo-task">Undo</button>
+                    <button class="task-del-btn">Delete</button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
