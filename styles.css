@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #F2C94C;
+    /* background:#F2C94C; */
+    background: grey;
 }
 
 img {
